@@ -39,7 +39,8 @@ Insights:
 - There are 6 departments in the company, yet only Operations Department had an equal gender distribution. HR department is dominated by female and the 4 other departments is dominated by male
 - New hires in Financial Year (FY) 20 were from the age group of 20-29 which means that there are opportunities for young generations to be hired
 - Operations department hired the most new employess in FY20
-- Overall, the current gender ratio 7:3 (Male:Female) which is still over the target of 5:5
+- Overall, the current gender ratio 7:3 (Male:Female) which is still over the target of 5:5  
+
 Performance, promotion, and turnover:
 - Promotions were mostly made on male employees (78% vs 22%)
 - The number of promotions are projected to be higher in FY21
