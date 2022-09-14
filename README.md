@@ -31,6 +31,24 @@ Churn Analysis:
 - Customers that are on fiber optic monthly internet service are more likely to churn (55% of time) 
 - Currently customers that have phone service are on risk of churn
 
+### Task 3: Diversity & Inclusion (Human Resources) Dashboard
+The client wants to see hiring, performance, promotion, and turnover of the company employees based on gender, age group, and department. Is diversity exist wihtin the company whether its regarding employees' age, gender, and job level? Does bias exist when i.e. hiring or promoting?
+
+Insights:
+- Since 2011-2017, hiring trends seems to have an inclination on male gender. However, this has since changed from 2018 where it can be seen that there is an equal opportunity for both genders to be hired
+- There are 6 departments in the company, yet only Operations Department had an equal gender distribution. HR department is dominated by female and the 4 other departments is dominated by male
+- New hires in Financial Year (FY) 20 were from the age group of 20-29 which means that there are opportunities for young generations to be hired
+- Operations department hired the most new employess in FY20
+- Overall, the current gender ratio 7:3 (Male:Female) which is still over the target of 5:5  
+
+Performance, promotion, and turnover:
+- Promotions were mostly made on male employees (78% vs 22%)
+- The number of promotions are projected to be higher in FY21
+- Average employee performance in FY19 and FY20 is similar although it saw a slight drop
+- Turnovers are expected to be 87% in FY20, the leavers are confirmed to be 9.4%
+- Turnovers will be massively expected to occur on Operations and Sales & Marketing Department
+- Most of these turnovers will be employees on their third year
+
 ## 3. Premier League 21-22 clubs visualisation using Tableau
 
 ## 4. KPMG Virtual Experience Dashboard
