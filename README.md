@@ -1,6 +1,19 @@
 # Data visualisations dashboards using Python Jupyter Notebook, Power BI, and Tableau
 
 ## 1. Hotel demand project using Python (on-going)
+[Data source](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)  
+This is an EDA project on hotel demand dataset with rich features. I implemented various data process here such as transforming data (cleaning and merging), data visualisation using matplotlib and seaborn and creating dashboard using Tableau. During the transformation phase, I used external data source for mapping country code to country name. Tableau was the preferred method to visualise the data here due to the number of features the data has.  
+[Dashboard 1 link (Tableau)](https://public.tableau.com/app/profile/brian.loe4583/viz/Hotelbookingsdemand/Bookingsperformance)  
+[Dashboard 2 link (Tableau)](https://public.tableau.com/app/profile/brian.loe4583/viz/Bookingsalesdetails/BookingSalesDetails)
+### Overview and Methodology:
+The data is about booking demand of a city hotel and resort hotel. The data was originally published in this [article](https://www.sciencedirect.com/science/article/pii/S2352340918315191). It includes 32 columns which encouraged me for doing data visualisation and exploration. The data cleaning phase was not too complicated as there are only a few null values, data is quite consistent, and date is in the right format. During the transformation phase I had to import external data source for alpha-3 country codes to map the original dataset to have country names instead of codes. Some interesting features are `Reservation Status`, `average daily rate (adr)`, `repeated guest`, `market segment`, `prev. cancellation`, `customer type`, `distribution channel`, `canceled bookings`, `deposit type`. 
+
+###Insights:
+Dashboard 1 (Hotel booking performance):
+- Comparing the two hotels, city hotel has a lot of canceled reservation (27%) than resort hotel (9%).
+- August is the peak month for customers to check-in their reservation for both hotels.
+- Most of the customers are from Portugal and surrounding (mostly European countries).
+- 
 
 ## 2. PWC Virtual Experience Dashboard
 ### Task 1: Call Centre Dashboard
