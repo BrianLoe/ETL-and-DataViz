@@ -1,4 +1,4 @@
-# Data visualisations dashboards using Python Jupyter Notebook, Power BI, and Tableau
+  # Data visualisations dashboards using Python Jupyter Notebook, Power BI, and Tableau
 
 ## 1. Hotel demand project using Python (on-going)
 [Data source](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)  
@@ -8,12 +8,19 @@ This is an EDA project on hotel demand dataset with rich features. I implemented
 ### Overview and Methodology:
 The data is about booking demand of a city hotel and resort hotel. The data was originally published in this [article](https://www.sciencedirect.com/science/article/pii/S2352340918315191). It includes 32 columns which encouraged me for doing data visualisation and exploration. The data cleaning phase was not too complicated as there are only a few null values, data is quite consistent, and date is in the right format. During the transformation phase I had to import external data source for alpha-3 country codes to map the original dataset to have country names instead of codes. Some interesting features are `Reservation Status`, `average daily rate (adr)`, `repeated guest`, `market segment`, `prev. cancellation`, `customer type`, `distribution channel`, `canceled bookings`, `deposit type`. 
 
-###Insights:
+### Insights:
 Dashboard 1 (Hotel booking performance):
 - Comparing the two hotels, city hotel has a lot of canceled reservation (27%) than resort hotel (9%).
 - August is the peak month for customers to check-in their reservation for both hotels.
 - Most of the customers are from Portugal and surrounding (mostly European countries).
-- 
+- Highest average daily rate is achieved in August overall but City hotel achieved it in May.  
+
+Dashboard 2 (Hotel booking sales):
+- Overall, repeated guests come from Corporate market. However, between the two hotels, city hotel has a lof of repeated guests from Corporate while resort hotel has a lot of repeated guests from Direct (people ordering directly) segment. Online travel agency (TA) is also popular source.
+- The number of customers that had previous cancellations are similar for Contract and Group type customers. However, for Transient (Regular customers) type, the number of customers that have not canceled is significantly larger compared to Transient-Group (Regular customers but in group) which has higher previous cancellations.
+- Travel agency (TA)/Tour operators (TO) produce a lot of bookings compared to other distribution channels. City hotel has the most significant value for TA/TO channel.
+- No deposit type was the most preferred option when making a reservation for both hotels.
+- Transient customer type that canceled the booking and make no deposit represent about 80% of customers.
 
 ## 2. PWC Virtual Experience Dashboard
 ### Task 1: Call Centre Dashboard
