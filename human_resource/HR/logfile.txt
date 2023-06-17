@@ -1,0 +1,15 @@
+2023-Jun-17-23:06:25, Extracting Data ...
+2023-Jun-17-23:06:25, Extraction done in --- 0.23337411880493164 seconds ---
+2023-Jun-17-23:06:25, Transforming Data ...
+2023-Jun-17-23:06:26, Transformation that were done in full data 2023-06-17 23:06:26.873442 :
+2023-Jun-17-23:06:26, - Replacing termination date value of 12/12/2999 to NaN
+2023-Jun-17-23:06:26, - Converting violating termination date values to today's date
+2023-Jun-17-23:06:26, - Drop 'notes' column
+2023-Jun-17-23:06:26, - Adding start_year and termination_year
+2023-Jun-17-23:06:26, - Inactivating status for terminated employees
+2023-Jun-17-23:06:26, - Adding tenure_year and tenure_months
+2023-Jun-17-23:06:27, Transformation done in --- 1.9840335845947266 seconds ---
+2023-Jun-17-23:06:27, Loading Data ...
+2023-Jun-17-23:06:27, Loading done in --- 0.18550324440002441 seconds ---
+2023-Jun-17-23:06:27, 
+
