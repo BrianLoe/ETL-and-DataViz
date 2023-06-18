@@ -1,4 +1,4 @@
-Department,Job_title,Job_Profile,Compensation,Level,Bonus %
+Department,Job_title,Job_Profile,Salary,level,Bonus_pct
 Corporate,CEO,JP_1000,500000.0,CSuite,1.0
 Corporate,HR Manager,JP_1001,100000.0,Manager,0.2
 Corporate,AR Specialist,JP_1002,65000.0,Individual Contributor,0.15
