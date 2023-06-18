@@ -1,10 +1,10 @@
-Office,COL Amount,Currency
-NYC,100,USD
-Boulder,70,USD
-Oslo,70,NOK
-SanJose,90,USD
-London,90,GBP
-Tokyo,85,JPY
-HongKong,85,HKD
-SanFran,100,USD
-Austin,70,USD
+,Office,Currency
+0,NYC,USD
+1,Boulder,USD
+2,Oslo,NOK
+3,SanJose,USD
+4,London,GBP
+5,Tokyo,JPY
+6,HongKong,HKD
+7,SanFran,USD
+8,Austin,USD
