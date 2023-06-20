@@ -1,53 +1,53 @@
-State_name,State_code
-New York,NY
-Georgia,GA
-New Jersey,NJ
-California,CA
-Montana,MT
-Texas,TX
-Colorado,CO
-Oklahoma,OK
-Florida,FL
-North Dakota,ND
-Massachusetts,MA
-South Carolina,SC
-Missouri,MO
-Louisiana,LA
-Washington,WA
-Ohio,OH
-Virginia,VA
-Iowa,IA
-Vermont,VT
-Utah,UT
-Arizona,AZ
-Michigan,MI
-West Virginia,WV
-Illinois,IL
-North Carolina,NC
-Idaho,ID
+State_code,State_name
+NY,New York
+GA,Georgia
+NJ,New Jersey
+CA,California
+MT,Montana
+TX,Texas
+CO,Colorado
+OK,Oklahoma
+FL,Florida
+ND,North Dakota
+MA,Massachusetts
+SC,South Carolina
+MO,Missouri
+LA,Louisiana
+WA,Washington
+OH,Ohio
+VA,Virginia
+IA,Iowa
+VT,Vermont
+UT,Utah
+AZ,Arizona
+MI,Michigan
+WV,West Virginia
+IL,Illinois
+NC,North Carolina
+ID,Idaho
 ,
-Connecticut,CT
-Pennsylvania,PA
-Kansas,KS
-Wyoming,WY
-Indiana,IN
-Minnesota,MN
-New Mexico,NM
-Oregon,OR
-South Dakota,SD
-Arkansas,AR
-Alabama,AL
-Kentucky,KY
-Nebraska,NE
-Mississippi,MS
-Tennessee,TN
-Maryland,MD
-Wisconsin,WI
-Nevada,NV
-Delaware,DE
-Alaska,AK
-New Hampshire,NH
-Hawaii,HI
-Rhode Island,RI
-Maine,ME
-District of Columbia,DC
+CT,Connecticut
+PA,Pennsylvania
+KS,Kansas
+WY,Wyoming
+IN,Indiana
+MN,Minnesota
+NM,New Mexico
+OR,Oregon
+SD,South Dakota
+AR,Arkansas
+AL,Alabama
+KY,Kentucky
+NE,Nebraska
+MS,Mississippi
+TN,Tennessee
+MD,Maryland
+WI,Wisconsin
+NV,Nevada
+DE,Delaware
+AK,Alaska
+NH,New Hampshire
+HI,Hawaii
+RI,Rhode Island
+ME,Maine
+DC,District of Columbia
