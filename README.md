@@ -1,6 +1,8 @@
-  # Data visualisations dashboards using Python Jupyter Notebook, Power BI, and Tableau
+# Data visualisations dashboards using Python Jupyter Notebook, Power BI, and Tableau
 
-## 1. Hotel demand project using Python (on-going)
+## Implementing ETL pipeline on human resource dataset and data analytics
+
+## Hotel demand project using Python
 [Data source](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)  
 This is an EDA project on hotel demand dataset with rich features. I implemented various data process here such as transforming data (cleaning and merging), data visualisation using matplotlib and seaborn and creating dashboard using Tableau. During the transformation phase, I used external data source for mapping country code to country name. Tableau was the preferred method to visualise the data here due to the number of features the data has.  
 [Dashboard 1 link (Tableau)](https://public.tableau.com/app/profile/brian.loe4583/viz/Hotelbookingsdemand/Bookingsperformance)  
@@ -22,7 +24,7 @@ Dashboard 2 (Hotel booking sales):
 - No deposit type was the most preferred option when making a reservation for both hotels.
 - Transient customer type that canceled the booking and make no deposit represent about 80% of customers.
 
-## 2. PWC Virtual Experience Dashboard
+## PWC Virtual Experience Dashboard
 ### Task 1: Call Centre Dashboard
 The client from a call centre company wants to know if they are doing well handling customers' call. They have requested to be created a dashboard for key components of their call centre data. The client asks a dashboard to understand their data better.
 
@@ -69,7 +71,7 @@ Performance, promotion, and turnover:
 - Turnovers will be massively expected to occur on Operations and Sales & Marketing Department
 - Most of these turnovers will be employees on their third year
 
-## 3. Premier League 21-22 clubs visualisation using Tableau
+## Premier League 21-22 clubs visualisation using Tableau
 A. Do clubs that create a lot of chances placed higher in the standings?
 Using goals/assists (G/A) per 90, their expected G/A (XG/XA) per 90, and non-penalty G/A & XG/XA to determine clubs' performance.
 Chances are measured by clubs' ability to make chances and convert it into goals. It will be also determined with non-penalty to see if there is any difference.
@@ -88,5 +90,3 @@ We can see that although the top 3 clubs has similar possession and touches, why
 From the posession vs touch area, we can see that Chelsea has the highest possession and touches in defensive 3rd area. This is not good because it means that Chelsea were not able to progress the ball into opponent half. With fewer touches, Liverpool and Man. City were able to rake more possession in those same area. 
 
 Tottenham, Arsenal, and Man. United has similar pattern. If we compare the top 2 teams with the 4 other teams, it is obvious that a lot of touches in defensive 3rd is not good. We can see a big gap in attacking area possession vs touches. This might happen because they lack a player in defense and midfield that can progress the ball up higher into attacking half. Being stuck in defensive 3rd is not good because it means that they are wasting a lot of time on their own half which then few factors such as opponent pressing, defense low block, etc. will outplayed themselves.
-
-## 4. KPMG Virtual Experience Dashboard
