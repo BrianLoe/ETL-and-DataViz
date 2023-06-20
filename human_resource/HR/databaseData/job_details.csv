@@ -1,0 +1,55 @@
+Job_Profile,Department,Job_title,Salary,level,Bonus_pct
+JP_1000,Corporate,CEO,500000.0,CSuite,1.0
+JP_1001,Corporate,HR Manager,100000.0,Manager,0.2
+JP_1002,Corporate,AR Specialist,65000.0,Individual Contributor,0.15
+JP_1003,Corporate,AP Specialist,65000.0,Individual Contributor,0.15
+JP_1004,Corporate,FP&A Analyst,70000.0,Individual Contributor,0.15
+JP_1005,Corporate,Coordinator,50000.0,Individual Contributor,0.15
+JP_1006,Corporate,HR Coordinator,50000.0,Individual Contributor,0.15
+JP_1007,Corporate,Counsel,220000.0,Individual Contributor,0.15
+JP_1008,Corporate,Finance Coordinator,55000.0,Individual Contributor,0.15
+JP_1009,Corporate,Accountant,85000.0,Individual Contributor,0.15
+JP_1010,Corporate,"Specialist, Training and Development",70000.0,Individual Contributor,0.15
+JP_1011,Corporate,"Manager, Corporate",120000.0,Manager,0.15
+JP_1012,Corporate,"VP, Corporate",225000.0,VP,0.3
+JP_1013,Corporate,HR Generalist,75000.0,Individual Contributor,0.15
+JP_1014,Corporate,HR Analyst,65000.0,Individual Contributor,0.15
+JP_1015,Customer Service,Associate Account Manager,55000.0,Individual Contributor,0.15
+JP_1016,Customer Service,Account Manager,70000.0,Individual Contributor,0.15
+JP_1017,Customer Service,"SVP, Customer Service",280000.0,SVP,0.3
+JP_1018,Customer Service,Senior Account Manager,100000.0,Senior,0.15
+JP_1019,Customer Service,"Manager, Customer Service",85000.0,Manager,0.2
+JP_1020,Customer Service,CS Operations Specialist,80000.0,Individual Contributor,0.15
+JP_1021,Customer Service,"Director, Customer Service",160000.0,Director,0.2
+JP_1022,Marketing,Graphic Designer,75000.0,Individual Contributor,0.15
+JP_1023,Marketing,Programmatic Marketing Specialist,70000.0,Individual Contributor,0.15
+JP_1024,Marketing,Copy Writer,85000.0,Individual Contributor,0.15
+JP_1025,Marketing,"Associate, Marketing",120000.0,Associate,0.1
+JP_1026,Marketing,"VP, Marketing",250000.0,VP,0.3
+JP_1027,Marketing,"Manager, Marketing",130000.0,Manager,0.2
+JP_1028,Marketing,"Director, Marketing",190000.0,Director,0.2
+JP_1029,Sales,Account Executive,85000.0,Individual Contributor,0.15
+JP_1030,Sales,"Director, Sales",175000.0,Director,0.2
+JP_1031,Sales,Regional Sales Manager,140000.0,Manager,0.2
+JP_1032,Sales,Sales Manager,120000.0,Manager,0.2
+JP_1033,Sales,"SVP, Sales",350000.0,SVP,0.3
+JP_1034,Sales,Sales Team Lead,95000.0,Senior,0.15
+JP_1035,Sales,"Associate, Sales",75000.0,Associate,0.1
+JP_1036,Technology,CTO,400000.0,CSuite,0.5
+JP_1037,Technology,IT,80000.0,Individual Contributor,0.15
+JP_1038,Technology,Software Engineer,110000.0,Individual Contributor,0.15
+JP_1039,Technology,"Director, Engineering",200000.0,Director,0.2
+JP_1040,Technology,Senior Software Engineer,140000.0,Senior,0.15
+JP_1041,Technology,"VP, Technology",325000.0,VP,0.3
+JP_1042,Technology,"Manager, Engineering",155000.0,Manager,0.2
+JP_1043,Technology,"SVP, Technology",355000.0,SVP,0.3
+JP_1044,Marketing,"Senior, Copy Writer",100000.0,Senior,0.15
+JP_1045,Marketing,Chief Marketing Officer,370000.0,CSuite,0.5
+JP_1046,Marketing,"SVP, Marketing",325000.0,SVP,0.3
+JP_1047,Corporate,"Manager, Finance",110000.0,Manager,0.2
+JP_1048,Corporate,Chief Financial Officer,390000.0,CSuite,0.5
+JP_1049,Corporate,Chief Human Resources Officer,380000.0,CSuite,0.5
+JP_1050,Corporate,"Senior, Finance",110000.0,Senior,0.15
+JP_1051,Corporate,"Director, HR",180000.0,Director,0.2
+JP_1052,Corporate,"Director, Finance",190000.0,Director,0.2
+JP_1053,Customer Service,Chieft Customer Officer,380000.0,CSuite,0.5
