@@ -80,3 +80,21 @@
 2023-Jun-20-16:30:59, Loading done in --- 0.24735641479492188 seconds ---
 2023-Jun-20-16:30:59, 
 
+2023-Jun-20-21:06:45, Extracting Data ...
+2023-Jun-20-21:06:45, Extraction done in --- 0.245436429977417 seconds ---
+2023-Jun-20-21:06:45, Transforming Data ...
+2023-Jun-20-21:06:54, Transformation that were done in full data 2023-06-20 21:06:54.573475 :
+2023-Jun-20-21:06:54, - Replacing termination date value of 12/12/2999 to NaN
+2023-Jun-20-21:06:54, - Converting violating termination date values to today's date
+2023-Jun-20-21:06:54, - Drop 'notes' column
+2023-Jun-20-21:06:54, - Adding start_year and termination_year
+2023-Jun-20-21:06:54, - Inactivating status for terminated employees
+2023-Jun-20-21:06:54, - Adding tenure_year and tenure_months
+2023-Jun-20-21:06:54, - Cleaning state column
+2023-Jun-20-21:06:54, - Updating age values
+2023-Jun-20-21:06:54, - Converting salary to USD
+2023-Jun-20-21:06:55, Transformation done in --- 9.030495882034302 seconds ---
+2023-Jun-20-21:06:55, Loading Data ...
+2023-Jun-20-21:06:55, Loading done in --- 0.2343738079071045 seconds ---
+2023-Jun-20-21:06:55, 
+
