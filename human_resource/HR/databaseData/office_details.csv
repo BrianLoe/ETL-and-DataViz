@@ -1,4 +1,4 @@
-office_id,office_name,Currency,office_type
+office_id,office_name,currency,office_type
 0,NYC,USD,Corporate
 1,NYC,USD,Technology
 2,Boulder,USD,Corporate

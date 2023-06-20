@@ -1,4 +1,4 @@
-EmployeeID,Gender,Gender_Identity,Race_Ethnicity,Veteran,Disability,Education,Sexual_Orientation,Age,DOB
+employeeid,gender,gender_identity,race_ethnicity,veteran,disability,education,sexual_orientation,age,dob
 100001,female,female,White,0,0,Undergraduate,Heterosexual,37,1986-01-05
 100002,male,male,White,0,1,Undergraduate,Heterosexual,52,1971-07-13
 100003,female,female,Asian,0,0,Undergraduate,Heterosexual,34,1989-01-25

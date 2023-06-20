@@ -1,4 +1,4 @@
-EmployeeID,StreetAddress,City,ZipCode,State_code,Country_code,Start_Date,Termination_Date,Active_Status,start_year,termination_year,tenure_months,tenure_years
+employeeid,streetaddress,city,zipcode,state_code,country_code,start_date,termination_date,active_status,start_year,termination_year,tenure_months,tenure_years
 100001,1427 Buckhannan Avenue,North Syracuse,13212,NY,US,2009-05-04,,1,2009,0,172.02932403546836,14.139396496065894
 100002,4265 Graystone Lakes,Macon,31206,GA,US,2009-05-04,,1,2009,0,172.02932403546836,14.139396496065894
 100003,1680 Hudson Street,Weehawken,07087,NJ,US,2009-05-18,2013-06-05 00:00:00.000000,0,2009,2013,49.3,4.052054794520548
