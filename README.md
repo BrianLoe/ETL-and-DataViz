@@ -1,5 +1,29 @@
 # Data visualisations dashboards using Python Jupyter Notebook, Power BI, and Tableau
 
+##### Data visualisations using Tableau: [DOTA 2 Meta Comparison](https://public.tableau.com/app/profile/brian.loe4583/viz/Dota2Meta/Dashboard1), [Din Tai Fung Sales Dashboard](https://public.tableau.com/app/profile/brian.loe4583/viz/SalesDashboardDTF/DinTaiFungOnlineOrderingDashboard)
+
+## Premier League 21-22 clubs visualisation using Tableau
+A. Do clubs that create a lot of chances placed higher in the standings?
+Using goals/assists (G/A) per 90, their expected G/A (XG/XA) per 90, and non-penalty G/A & XG/XA to determine clubs' performance.
+Chances are measured by clubs' ability to make chances and convert it into goals. It will be also determined with non-penalty to see if there is any difference.
+
+Dashboard link: [Tableau Dashboard](https://public.tableau.com/app/profile/brian.loe4583/viz/PremierLeagueClubsVisualisation/Attackingvis)
+
+Insights:
+- Clubs that create a lot of chance actually do placed higher in the standing for the upper half table (1-10) 
+- The bottom half (11-20) as can be seen, although they create many chances, they are being punished by not converting those into goals (i.e. the orange circle can be seen is above the blue circle) 
+- Most clubs that are on the bottom half has only one particular player that contribute to the team goals (player that has higher than 20% goal contribution), they depend a lot on their key player
+
+Goals win games and that applies to this premier league season. Man. City and Liverpool were amongst the top teams who converted a lot of goals from their chances. They were on their own league compared to the others. The under performance from the clubs can be seen through their chance conversion in the Non-penalty XG/XA vs actual G/A per 90 graph. This mostly reflects what happens in the table, with some clubs such as Brighton and Tottenham who were placed a lot higher despite having an under performance.
+
+B. Is possession in premier league helps club win games or placed higher in the standings?
+First comparison will be made on the top 6 teams which is Man. City, Liverpool,  Chelsea, Tottenham, Arsenal, and Man. United. These teams are called the Big Six in England. First of all, from these 6 teams, Man. City, Liverpool, and Chelsea has higher posessions than the others. To be able to score goals with possession, the most essential area of the pitch is the Attacking 3rd to Attacking penalty area of opposition. A higher number here will mean that the club is able to utilise their possession style of football to maximum. 
+
+We can see that although the top 3 clubs has similar possession and touches, why does Chelsea has a huge gap points to the top 2 clubs?
+From the posession vs touch area, we can see that Chelsea has the highest possession and touches in defensive 3rd area. This is not good because it means that Chelsea were not able to progress the ball into opponent half. With fewer touches, Liverpool and Man. City were able to rake more possession in those same area. 
+
+Tottenham, Arsenal, and Man. United has similar pattern. If we compare the top 2 teams with the 4 other teams, it is obvious that a lot of touches in defensive 3rd is not good. We can see a big gap in attacking area possession vs touches. This might happen because they lack a player in defense and midfield that can progress the ball up higher into attacking half. Being stuck in defensive 3rd is not good because it means that they are wasting a lot of time on their own half which then few factors such as opponent pressing, defense low block, etc. will outplayed themselves.
+
 ## Implementing ETL pipeline on human resource dataset and data analytics
 
 ## Hotel demand project using Python
@@ -70,23 +94,3 @@ Performance, promotion, and turnover:
 - Turnovers are expected to be 87% in FY20, the leavers are confirmed to be 9.4%
 - Turnovers will be massively expected to occur on Operations and Sales & Marketing Department
 - Most of these turnovers will be employees on their third year
-
-## Premier League 21-22 clubs visualisation using Tableau
-A. Do clubs that create a lot of chances placed higher in the standings?
-Using goals/assists (G/A) per 90, their expected G/A (XG/XA) per 90, and non-penalty G/A & XG/XA to determine clubs' performance.
-Chances are measured by clubs' ability to make chances and convert it into goals. It will be also determined with non-penalty to see if there is any difference.
-
-Insights:
-- Clubs that create a lot of chance actually do placed higher in the standing for the upper half table (1-10) 
-- The bottom half (11-20) as can be seen, although they create many chances, they are being punished by not converting those into goals (i.e. the orange circle can be seen is above the blue circle) 
-- Most clubs that are on the bottom half has only one particular player that contribute to the team goals (player that has higher than 20% goal contribution), they depend a lot on their key player
-
-Goals win games and that applies to this premier league season. Man. City and Liverpool were amongst the top teams who converted a lot of goals from their chances. They were on their own league compared to the others. The under performance from the clubs can be seen through their chance conversion in the Non-penalty XG/XA vs actual G/A per 90 graph. This mostly reflects what happens in the table, with some clubs such as Brighton and Tottenham who were placed a lot higher despite having an under performance.
-
-B. Is possession in premier league helps club win games or placed higher in the standings?
-First comparison will be made on the top 6 teams which is Man. City, Liverpool,  Chelsea, Tottenham, Arsenal, and Man. United. These teams are called the Big Six in England. First of all, from these 6 teams, Man. City, Liverpool, and Chelsea has higher posessions than the others. To be able to score goals with possession, the most essential area of the pitch is the Attacking 3rd to Attacking penalty area of opposition. A higher number here will mean that the club is able to utilise their possession style of football to maximum. 
-
-We can see that although the top 3 clubs has similar possession and touches, why does Chelsea has a huge gap points to the top 2 clubs?
-From the posession vs touch area, we can see that Chelsea has the highest possession and touches in defensive 3rd area. This is not good because it means that Chelsea were not able to progress the ball into opponent half. With fewer touches, Liverpool and Man. City were able to rake more possession in those same area. 
-
-Tottenham, Arsenal, and Man. United has similar pattern. If we compare the top 2 teams with the 4 other teams, it is obvious that a lot of touches in defensive 3rd is not good. We can see a big gap in attacking area possession vs touches. This might happen because they lack a player in defense and midfield that can progress the ball up higher into attacking half. Being stuck in defensive 3rd is not good because it means that they are wasting a lot of time on their own half which then few factors such as opponent pressing, defense low block, etc. will outplayed themselves.
