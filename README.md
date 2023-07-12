@@ -25,6 +25,27 @@ From the posession vs touch area, we can see that Chelsea has the highest posses
 Tottenham, Arsenal, and Man. United has similar pattern. If we compare the top 2 teams with the 4 other teams, it is obvious that a lot of touches in defensive 3rd is not good. We can see a big gap in attacking area possession vs touches. This might happen because they lack a player in defense and midfield that can progress the ball up higher into attacking half. Being stuck in defensive 3rd is not good because it means that they are wasting a lot of time on their own half which then few factors such as opponent pressing, defense low block, etc. will outplayed themselves.
 
 ## Implementing ETL pipeline on human resource dataset and data analytics
+[Data source](https://github.com/Koluit/The_Company_Data)  
+This project focuses on People / Human Resource analytics, demonstrating the implementation of an Extract, Transform, Load (ETL) process for data extraction, transformation, and loading into a PostgreSQL database. The project also involved data normalisation using a snowflake schema to ensure an efficient storage system. Additionally, Power BI was used for creating custom visualisations and interactive dashboards.
+
+### Methodology:
+1. ETL process.  
+   I used Python notebook to do the ETL step of the project. This process is divided into extract, transform, and load stage.
+   <div align="center"><img src="https://github.com/BrianLoe/ETL-and-DataViz/assets/58500773/8127227b-ef8d-4971-b445-03dfd84563b3" width=700></div>
+
+   - Extract: There are 4 + 1 data that I identified and each correspond to the company, job details, demographic, and the full/main data. The +1 is a data        about survey results. We need to import those data into the notebook using pandas. The data can be either downloaded through Kaggle or the creator's          GitHub. This a relatively simple stage due to local storage. If we need to use an API such as REST API or even Kaggle API, we need to download the data from the web automatically using bash script.
+     
+   - Transform: The main transformations done here are converting data types, validating id for each data, validating integrity and accuracy, handling null values, and formatting dates variable. The steps taken here has to be in order. The idea is we need to clean the data with simpler structure.
+     - First, we clean the company data. This is due to it having only 3 columns and it provides information on the office locations (1 change done).
+     - Second step is to clean the job details data. It provides information about job profile, title and financial package that each employee receive (2 changes done).
+     - Third is to clean full/main data. It provides the full information about each employee. This is the most crucial step because it consists of several violations of validity. Check for matching ids in other data, formatting date variable, checking correctness, etc. (9 changes done).
+     - Fourth is to clean demographic data which provides demographic information on employees (1 change done).
+     - Final step is to clean survey results data. It provides the result of a recent survey that the company held, overall the data provides response in rating out of 5.
+     
+   - Load: Finalise the transformation and create csv files for each data. We need to load the csv files inside a folder in the environment. In order to store the data into a SQL database, we need to ensure the data is relational. I also did normalisation to remove duplication and to provide efficient storage. Then we create a database in PostgreSQL. This can be done using PGadmin4 the GUI (which is easier) or through command prompt. Establish a connection to the created database using own credentials. Create tables for each data except survey data and add foreign keys accordingly. Insert the data into each tables using importing tools in GUI or command prompt.
+
+2. Creating compelling visualisations using Power BI.
+Power BI provides integration with PostgreSQL, so we can directly connect to our database. I created five different dashboards with each displaying different information. The dashboards are Employee's job related information, diversity info, wellbeing info, hiring info, and the survey results. Each dashboard is linked to each other. 
 
 ## Hotel demand project using Python
 [Data source](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)  
