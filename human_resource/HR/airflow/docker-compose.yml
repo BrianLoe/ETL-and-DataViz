@@ -1,0 +1,26 @@
+version: "3"
+services:
+  webserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: webserver
+    volumes:
+      - ./dags:/usr/local/airflow/dags
+    ports:
+      - "8080:8080"
+    mem_limit: 512m
+    cpu_shares: 512
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: scheduler
+    volumes:
+      - ./dags:/usr/local/airflow/dags
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
