@@ -530,3 +530,45 @@
 2023-Sep-06-23:02:19, Loading done in --- 0.1439986228942871 seconds ---
 2023-Sep-06-23:02:19, 
 
+2023-Sep-07-22:11:07, Extracting Data...
+2023-Sep-07-22:11:08, Extraction done in --- 0.3317880630493164 seconds ---
+2023-Sep-07-22:11:08, Transforming Data...
+2023-Sep-07-22:11:08, --- Transforming job data...
+2023-Sep-07-22:11:08, --- Transforming done in job data
+2023-Sep-07-22:11:08, --- Transforming full data...
+2023-Sep-07-22:11:08, ------ Replacing termination date value of 12/12/2999 to NaN...
+2023-Sep-07-22:11:08, ------ Converting violating termination date values to today's date
+2023-Sep-07-22:11:08, ------ Dropping 'notes' column
+2023-Sep-07-22:11:08, ------ Adding start_year and termination_year
+2023-Sep-07-22:11:08, ------ Inactivating status for terminated employees
+2023-Sep-07-22:11:08, ------ Adding tenure_year and tenure_months
+2023-Sep-07-22:11:08, ------ Cleaning state column
+2023-Sep-07-22:11:14, ------ Updating age values
+2023-Sep-07-22:11:14, ------ Converting salary to USD
+2023-Sep-07-22:11:15, --- Transformation complete in full data
+2023-Sep-07-22:11:15, Transformation done in --- 7.801452398300171 seconds ---
+2023-Sep-07-22:11:15, Loading Data...
+2023-Sep-07-22:11:16, Loading done in --- 0.180999755859375 seconds ---
+2023-Sep-07-22:11:16, 
+
+2023-Sep-07-22:13:24, Extracting Data...
+2023-Sep-07-22:13:24, Extraction done in --- 0.06600189208984375 seconds ---
+2023-Sep-07-22:13:24, Transforming Data...
+2023-Sep-07-22:13:24, --- Transforming job data...
+2023-Sep-07-22:13:24, --- Transforming done in job data
+2023-Sep-07-22:13:24, --- Transforming full data...
+2023-Sep-07-22:13:24, ------ Replacing termination date value of 12/12/2999 to NaN...
+2023-Sep-07-22:13:24, ------ Converting violating termination date values to today's date
+2023-Sep-07-22:13:24, ------ Dropping 'notes' column
+2023-Sep-07-22:13:24, ------ Adding start_year and termination_year
+2023-Sep-07-22:13:24, ------ Inactivating status for terminated employees
+2023-Sep-07-22:13:24, ------ Adding tenure_year and tenure_months
+2023-Sep-07-22:13:24, ------ Cleaning state column
+2023-Sep-07-22:13:30, ------ Updating age values
+2023-Sep-07-22:13:30, ------ Converting salary to USD
+2023-Sep-07-22:13:31, --- Transformation complete in full data
+2023-Sep-07-22:13:31, Transformation done in --- 7.506382942199707 seconds ---
+2023-Sep-07-22:13:31, Loading Data...
+2023-Sep-07-22:13:32, Loading done in --- 0.1289994716644287 seconds ---
+2023-Sep-07-22:13:32, 
+

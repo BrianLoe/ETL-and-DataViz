@@ -18,6 +18,7 @@ log_file_name = 'logfile.txt' # name of the log file
 state_data_url = 'https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=53971' # url for US states data
 api_exrate_url = 'https://v6.exchangerate-api.com/v6/bbcdd4717012c0fb7b20f062/latest/USD' # url for exchange rate data in USD
 date_format = '%m/%d/%Y'
+file_name = 'data/human-resource-data-set-the-company.zip'
 
 default_args = {
     'owner':'Brian',
@@ -139,6 +140,7 @@ def extract_data():
     except Exception as error:
         log('Extracting Data failed, error caught: '+repr(error))
         log('\n')
+        print('ETL Stopping...')
         raise
         
 def transform_data(company_data, job_data, full_data, demographic_data, survey_data):
@@ -303,6 +305,7 @@ def transform_data(company_data, job_data, full_data, demographic_data, survey_d
     except Exception as error:
         log('Transforming Data failed, error caught: '+repr(error))
         log('\n')
+        print('ETL Stopping...')
         raise
 
 def load(comp_df,job_df,full_df,demo_df,survey_df):
@@ -320,8 +323,9 @@ def load(comp_df,job_df,full_df,demo_df,survey_df):
     except Exception as error:
         log('Loading Data failed, error caught: '+repr(error))
         log('\n')
+        print('ETL Stopping...')
         raise
-    
+
 def performETL_data():
     """
     Function to call the ETL processes in order.
@@ -330,33 +334,66 @@ def performETL_data():
     comp_df,job_df,full_df,demo_df,survey_df = transform_data(company_data, job_data, full_data, demographic_data, survey_data)
     load(comp_df,job_df,full_df,demo_df,survey_df)    
 
+def run_ETL(file_name, method='cmd'):
+    if method=='cmd':
+        try:
+            # download data
+            print('Downloading data...')
+            _downloadFrom_kaggle(data_location, download_path)
+            # unzip
+            print('Unzipping data...')
+            subprocess.run('powershell -command "Expand-Archive -Force E:\Documents\ETL-and-DataViz\human_resource\HR\data\human-resource-data-set-the-company.zip E:\Documents\ETL-and-DataViz\human_resource\HR\data"', shell=True, check=True)
+            subprocess.run('del /f "E:\Documents\ETL-and-DataViz\human_resource\HR\data\human-resource-data-set-the-company.zip"', shell=True, check=True)
+            # ETL
+            print('ETL starting...')
+            performETL_data()
+            return
+        except subprocess.CalledProcessError as e:
+            print("error code", e.returncode)
+            return
+    
+    elif method=='bash':
+        try:
+            # download data
+            print('Downloading data...')
+            _downloadFrom_kaggle(data_location, download_path)
+            # unzip
+            print('Unzipping data...')
+            subprocess.run(f'unzip {file_name} > rm -f {file_name}', shell=True, check=True)
+            print('ETL starting...')
+            performETL_data()
+            return
+        except subprocess.CalledProcessError as e:
+            print("error code", e.returncode)
+            return
+    
+    elif method=='airflow':
+        dag = DAG(
+        'hr_ETL_process',
+        default_args=default_args,
+        schedule='@daily',
+        description='ETL process for HR Data from Kaggle',
+        )
+        download_data = PythonOperator(
+            task_id = 'Download_datafromKaggle',
+            python_callable = _downloadFrom_kaggle,
+            dag=dag,
+        )
+        unzip_data = BashOperator(
+            task_id = 'unzip_downloadedData',
+            bash_command = f'unzip {file_name} > rm -f {file_name}',
+            dag=dag,
+        )
+        extract_transform_load = PythonOperator(
+            task_id = 'ETL_process',
+            python_callable = performETL_data(),
+            dag=dag,
+        )
+        # sequence initialisation
+        download_data >> unzip_data >> extract_transform_load
+    
+    else:
+        raise ValueError('Method is not recognised. Try one of this: "cmd", "bash", "airflow".')
+
 if __name__ == '__main__':
-    # dag = DAG(
-    #     'hr_ETL_process',
-    #     default_args=default_args,
-    #     schedule='@daily',
-    #     description='ETL process for HR Data from Kaggle',
-    # )
-    # download_data = PythonOperator(
-    #     task_id = 'Download_datafromKaggle',
-    #     python_callable = _downloadFrom_kaggle,
-    #     dag=dag,
-    # )
-    # unzip_data = BashOperator(
-    #     task_id = 'unzip_downloadedData',
-    #     bash_command = 'unzip data/human-resource-data-set-the-company.zip > rm -f data/human-resource-data-set-the-company.zip',
-    #     dag=dag,
-    # )
-    # extract_transform_load = PythonOperator(
-    #     task_id = 'ETL_process',
-    #     python_callable = performETL_data(),
-    #     dag=dag,
-    # )
-    # # sequence initialisation
-    # download_data >> unzip_data >> extract_transform_load
-    _downloadFrom_kaggle(data_location, download_path)
-    subprocess.run('powershell -command "Expand-Archive -Force E:\Documents\ETL-and-DataViz\human_resource\HR\data\human-resource-data-set-the-company.zip E:\Documents\ETL-and-DataViz\human_resource\HR\data"', shell=True)
-    subprocess.run('del /f "E:\Documents\ETL-and-DataViz\human_resource\HR\data\human-resource-data-set-the-company.zip"', shell=True)
-    
-    performETL_data()
-    
+    run_ETL(file_name, method='cmd')
